@@ -1,20 +1,85 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Portfolio Website
 
-# Run and deploy your AI Studio app
+A single-page portfolio application built with React and TypeScript, featuring a minimalist design with smooth transitions and multiple view states.
 
-This contains everything you need to run your app locally.
+## Key Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1n3N950X54gcLMx98Jzxgbs30dtRxlAtU
+- Single-page application with state-based navigation
+- Responsive grid-based layout with decorative overlays
+- Project gallery with detailed views and image carousels
+- Blog post listings with metadata and tags
+- Animated scroll indicators and fade-in effects
 
-## Run Locally
+## Technology Stack
 
-**Prerequisites:**  Node.js
+**Core:**
+- React 19.2.0
+- TypeScript 5.8.2
+- Vite 6.2.0
 
+**Dependencies:**
+- lucide-react - Icon library
+- Tailwind CSS - Utility-first styling (via CDN)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**Development:**
+- @vitejs/plugin-react
+- Node.js
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/alin9661/aaron-lin.git
+
+# Install dependencies
+npm install
+
+# Create environment file
+cp .env.local.example .env.local
+# Add your GEMINI_API_KEY to .env.local
+```
+
+## Usage
+
+```bash
+# Start development server on port 3000
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Project Structure
+
+```
+portfolio/
+├── components/          # Reusable UI components
+│   ├── DecorativeGrid.tsx
+│   ├── FadeIn.tsx
+│   ├── Header.tsx
+│   ├── MenuOverlay.tsx
+│   ├── ProjectRow.tsx
+│   ├── ScrollIndicator.tsx
+│   └── SectionLabel.tsx
+├── sections/           # Page sections
+│   ├── About.tsx
+│   ├── AllBlogs.tsx
+│   ├── AllProjects.tsx
+│   ├── Blog.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Hobbies.tsx
+│   ├── ProjectDetail.tsx
+│   └── Work.tsx
+├── App.tsx            # Main application component with view state management
+├── data.ts            # Content data (projects, blog posts, hobbies)
+├── index.tsx          # Application entry point
+├── index.html         # HTML template with Tailwind CDN
+├── vite.config.ts     # Vite configuration
+└── tsconfig.json      # TypeScript configuration
+```
+
+The application uses a view state system managed in App.tsx to handle navigation between home, project details, and listing views. All content is centralized in data.ts with TypeScript interfaces for type safety. Components use inline Tailwind classes with a consistent zinc color palette for styling.

@@ -54,22 +54,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#FDFDFD] text-zinc-950 font-sans selection:bg-zinc-900 selection:text-white overflow-x-hidden">
       <DecorativeGrid />
-      
+
       {/* Show scroll indicator only on home view */}
       {currentView === 'home' && <ScrollIndicator />}
 
       {/* FULL SCREEN MENU OVERLAY */}
-      <MenuOverlay 
-        menuOpen={menuOpen} 
-        setMenuOpen={setMenuOpen} 
+      <MenuOverlay
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
         onNavigate={goToHome}
       />
 
       {/* FIXED HEADER */}
-      <Header 
-        scrolled={scrolled} 
-        menuOpen={menuOpen} 
-        setMenuOpen={setMenuOpen} 
+      <Header
+        scrolled={scrolled}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
         goHome={goToHome}
       />
 
@@ -77,8 +77,8 @@ export default function App() {
         <main className="relative pt-32 pb-20">
           <Hero />
           <About />
-          <Work 
-            onViewAll={() => setCurrentView('all-projects')} 
+          <Work
+            onViewAll={() => setCurrentView('all-projects')}
             onProjectClick={handleProjectClick}
           />
           <Blog onViewAll={() => setCurrentView('all-blogs')} />
@@ -92,24 +92,24 @@ export default function App() {
       )}
 
       {currentView === 'all-projects' && (
-        <AllProjects 
-          onBack={goToHome} 
+        <AllProjects
+          onBack={goToHome}
           onProjectClick={handleProjectClick}
         />
       )}
 
       {currentView === 'project-detail' && selectedProject && (
-        <ProjectDetail 
-          project={selectedProject} 
-          onBack={() => setCurrentView('all-projects')} 
+        <ProjectDetail
+          project={selectedProject}
+          onBack={() => setCurrentView('all-projects')}
         />
       )}
-      
+
       {/* Decorative center markers */}
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none z-0 hidden md:block">
+      {/* }<div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none z-0 hidden md:block">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-zinc-200"></div>
         <div className="absolute top-0 left-0 h-full w-[1px] bg-zinc-200"></div>
-      </div>
+      </div> */}
 
     </div>
   );

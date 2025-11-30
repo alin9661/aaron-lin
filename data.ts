@@ -17,23 +17,23 @@ export interface ProjectData {
 export const PROJECTS: ProjectData[] = [
   {
     id: 1,
-    title: "Lumina Interface",
-    category: "Data Visualization",
+    title: "Nebula",
+    category: "Data Visualization", // CRM or Crypto
     description: "Real-time light synthesis control dashboard.",
     year: "2024",
     link: "#",
-    role: "Lead Frontend Engineer",
-    stack: ["React", "WebGL", "D3.js", "WebSocket"],
+    role: "Lead Developer",
+    stack: ["Next.js", "Solana", "D3.js", "TypeScript"],
     fullDescription: "Lumina is a bespoke control interface designed for large-scale light installation art. The challenge was to visualize 50,000+ DMX channels in real-time while providing granular control to light technicians. \n\nWe utilized WebGL for the visualization layer to ensure 60fps performance on standard tablets. The UI adheres to a strict high-contrast dark mode to reduce eye strain in unlit control booths. The system allows for generative pattern creation using a node-based editor, which we built from scratch.",
     images: [
       "https://picsum.photos/seed/lumina1/1600/900?grayscale",
-      "https://picsum.photos/seed/lumina2/800/600?grayscale", 
+      "https://picsum.photos/seed/lumina2/800/600?grayscale",
       "https://picsum.photos/seed/lumina3/800/600?grayscale"
     ]
   },
   {
     id: 2,
-    title: "Vantage System",
+    title: "HypeChain",
     category: "Design System",
     description: "Enterprise scalability framework.",
     year: "2023",
@@ -49,7 +49,7 @@ export const PROJECTS: ProjectData[] = [
   },
   {
     id: 3,
-    title: "Echo Spatial",
+    title: "LendX",
     category: "Mobile App",
     description: "Audio-first social networking.",
     year: "2023",
@@ -65,7 +65,7 @@ export const PROJECTS: ProjectData[] = [
   },
   {
     id: 4,
-    title: "Mono Finance",
+    title: "Model Madness",
     category: "Fintech",
     description: "Predictive spending algorithms.",
     year: "2022",
@@ -138,16 +138,16 @@ export const BLOG_POSTS = [
     id: 5,
     title: "Dark Mode Engineering",
     excerpt: "It's not just color swapping. Handling contrast ratios and semantic colors at scale.",
-    date: "Jun 10, 2023",
+    date: "Nov 30, 2025",
     readTime: "7 min",
     tag: "Engineering",
     link: "#"
   },
   {
     id: 6,
-    title: "The Grid System",
+    title: "A Deeper Dive",
     excerpt: "Why Swiss design principles still dominate the web 70 years later.",
-    date: "May 05, 2023",
+    date: "Nov 30, 2025",
     readTime: "5 min",
     tag: "History",
     link: "#"
@@ -254,9 +254,9 @@ export const HOBBIES = [
 ];
 
 export const SOCIALS = [
-  { id: 1, name: "GitHub", icon: Github, link: "#" },
-  { id: 2, name: "Twitter", icon: Twitter, link: "#" },
-  { id: 3, name: "LinkedIn", icon: Linkedin, link: "#" },
+  { id: 1, name: "GitHub", icon: Github, link: "https://github.com/alin9661" },
+  { id: 2, name: "Twitter", icon: Twitter, link: "https://x.com/AaronLin9" },
+  { id: 3, name: "LinkedIn", icon: Linkedin, link: "https://www.linkedin.com/in/aaron-lin0/" },
 ];
 
 export const MENU_ITEMS = [
