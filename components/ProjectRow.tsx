@@ -1,28 +1,19 @@
 
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { ProjectData } from '../data';
 
-export const ProjectRow = ({ 
-  project, 
-  index, 
-  onClick 
-}: { 
-  project: ProjectData, 
-  index: number,
-  onClick?: (id: number) => void
+export const ProjectRow = ({
+  project,
+  index
+}: {
+  project: ProjectData,
+  index: number
 }) => {
-  const handleClick = (e: React.MouseEvent) => {
-    if (onClick) {
-      e.preventDefault();
-      onClick(project.id);
-    }
-  };
-
   return (
-    <a 
-      href={project.link} 
-      onClick={handleClick}
+    <Link
+      to={`/work/${project.id}`}
       className="group block relative border-t border-zinc-200 py-12 transition-colors hover:bg-zinc-50 cursor-pointer"
     >
       <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 md:gap-12 relative z-10">
@@ -47,6 +38,6 @@ export const ProjectRow = ({
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };

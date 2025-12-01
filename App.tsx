@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation, useParams } from 'react-router-dom';
 import { DecorativeGrid } from './components/DecorativeGrid';
 import { ScrollIndicator } from './components/ScrollIndicator';
 import { MenuOverlay } from './components/MenuOverlay';
@@ -15,13 +16,10 @@ import { Hobbies } from './sections/Hobbies';
 import { Footer } from './sections/Footer';
 import { PROJECTS } from './data';
 
-type ViewState = 'home' | 'all-blogs' | 'all-projects' | 'project-detail';
-
-export default function App() {
+function AppContent() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentView, setCurrentView] = useState<ViewState>('home');
-  const [selectedProjectId, setSelectedProjectId] = useState<number | null>(null);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -38,31 +36,22 @@ export default function App() {
     }
   }, [menuOpen]);
 
-  const goToHome = () => {
-    setCurrentView('home');
-    setSelectedProjectId(null);
-  };
-
-  const handleProjectClick = (id: number) => {
-    setSelectedProjectId(id);
-    setCurrentView('project-detail');
-  };
-
-  // Find the selected project object
-  const selectedProject = PROJECTS.find(p => p.id === selectedProjectId);
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen bg-[#FDFDFD] text-zinc-950 font-sans selection:bg-zinc-900 selection:text-white overflow-x-hidden">
       <DecorativeGrid />
 
-      {/* Show scroll indicator only on home view */}
-      {currentView === 'home' && <ScrollIndicator />}
+      {/* Show scroll indicator only on home page */}
+      {location.pathname === '/' && <ScrollIndicator />}
 
       {/* FULL SCREEN MENU OVERLAY */}
       <MenuOverlay
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
-        onNavigate={goToHome}
       />
 
       {/* FIXED HEADER */}
@@ -70,40 +59,23 @@ export default function App() {
         scrolled={scrolled}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
-        goHome={goToHome}
       />
 
-      {currentView === 'home' && (
-        <main className="relative pt-32 pb-20">
-          <Hero />
-          <About />
-          <Work
-            onViewAll={() => setCurrentView('all-projects')}
-            onProjectClick={handleProjectClick}
-          />
-          <Blog onViewAll={() => setCurrentView('all-blogs')} />
-          <Hobbies />
-          <Footer />
-        </main>
-      )}
-
-      {currentView === 'all-blogs' && (
-        <AllBlogs onBack={goToHome} />
-      )}
-
-      {currentView === 'all-projects' && (
-        <AllProjects
-          onBack={goToHome}
-          onProjectClick={handleProjectClick}
-        />
-      )}
-
-      {currentView === 'project-detail' && selectedProject && (
-        <ProjectDetail
-          project={selectedProject}
-          onBack={() => setCurrentView('all-projects')}
-        />
-      )}
+      <Routes>
+        <Route path="/" element={
+          <main className="relative pt-32 pb-20">
+            <Hero />
+            <About />
+            <Work />
+            <Blog />
+            <Hobbies />
+            <Footer />
+          </main>
+        } />
+        <Route path="/work" element={<AllProjects />} />
+        <Route path="/work/:id" element={<ProjectDetailWrapper />} />
+        <Route path="/journal" element={<AllBlogs />} />
+      </Routes>
 
       {/* Decorative center markers */}
       {/* }<div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none z-0 hidden md:block">
@@ -112,5 +84,29 @@ export default function App() {
       </div> */}
 
     </div>
+  );
+}
+
+// Wrapper component for ProjectDetail to handle params
+function ProjectDetailWrapper() {
+  const { id } = useParams();
+  const project = PROJECTS.find(p => p.id === Number(id));
+
+  if (!project) {
+    return (
+      <div className="min-h-screen pt-32 pb-20 px-6 md:px-24 bg-white flex items-center justify-center">
+        <h1 className="text-2xl text-zinc-600">Project not found</h1>
+      </div>
+    );
+  }
+
+  return <ProjectDetail project={project} />;
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
