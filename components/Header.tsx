@@ -1,21 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   scrolled: boolean;
   menuOpen: boolean;
   setMenuOpen: (open: boolean) => void;
-  goHome: () => void;
 }
 
-export const Header = ({ scrolled, menuOpen, setMenuOpen, goHome }: HeaderProps) => (
+export const Header = ({ scrolled, menuOpen, setMenuOpen }: HeaderProps) => (
   <header className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6 flex justify-between items-center transition-all duration-500 ${scrolled && !menuOpen ? 'bg-[#FDFDFD]/90 backdrop-blur-sm' : ''}`}>
     
     {/* LOGO (Moved Left) */}
-    <a href="#" onClick={(e) => { e.preventDefault(); goHome(); window.scrollTo(0,0); }} className="group z-50 relative">
+    <Link to="/" className="group z-50 relative">
       <span className={`text-xl font-bold tracking-tighter uppercase transition-colors duration-300 ${menuOpen ? 'text-zinc-950' : 'text-zinc-950 hover:text-zinc-500'}`}>
         Aaron Lin
       </span>
-    </a>
+    </Link>
 
     {/* MENU BUTTON (Moved Right) */}
     <button 

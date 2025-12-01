@@ -1,14 +1,11 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from '../components/FadeIn';
 import { SectionLabel } from '../components/SectionLabel';
 import { BLOG_POSTS } from '../data';
 
-interface BlogProps {
-  onViewAll: () => void;
-}
-
-export const Blog = ({ onViewAll }: BlogProps) => (
+export const Blog = () => (
   <section id="journal" className="py-24 md:py-40 px-6 md:px-24 bg-white relative z-10 border-b border-zinc-100">
     <FadeIn>
       <SectionLabel number="03" text="Journal" />
@@ -43,12 +40,12 @@ export const Blog = ({ onViewAll }: BlogProps) => (
 
     <div className="mt-16 flex justify-center">
       <FadeIn delay={400}>
-        <button 
-          onClick={onViewAll}
-          className="px-8 py-3 border border-zinc-200 text-xs font-bold uppercase tracking-widest hover:bg-zinc-950 hover:text-white transition-all duration-300"
+        <Link
+          to="/journal"
+          className="inline-block px-8 py-3 border border-zinc-200 text-xs font-bold uppercase tracking-widest hover:bg-zinc-950 hover:text-white transition-all duration-300"
         >
           View All Articles
-        </button>
+        </Link>
       </FadeIn>
     </div>
   </section>

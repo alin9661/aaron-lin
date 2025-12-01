@@ -7,7 +7,7 @@ export const DecorativeGrid = () => (
     <div className="absolute top-12 left-1/2 -translate-x-1/2 text-zinc-300">
       <Plus size={16} strokeWidth={1} />
     </div>
-    
+
     {/* Bottom Cross */}
     <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-zinc-300">
       <Plus size={16} strokeWidth={1} />

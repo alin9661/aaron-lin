@@ -1,0 +1,118 @@
+# CodeRabbit Configuration
+# https://docs.coderabbit.ai/configuration
+
+language: en-US
+early_access: false
+
+reviews:
+  # Enable automatic PR reviews
+  enabled: true
+
+  # Review new files added in the PR
+  review_new_files: true
+
+  # Review existing files that are modified in the PR
+  review_existing_files: true
+
+  # Level of review comments (critical, important, moderate, minor, trivial)
+  review_level: moderate
+
+  # Enable auto-review on PR creation
+  auto_review:
+    enabled: true
+
+  # Ignore certain file patterns
+  path_filters:
+    exclude:
+      - "**/*.md"
+      - "**/*.json"
+      - "**/package-lock.json"
+      - "**/pnpm-lock.yaml"
+      - "**/.gitignore"
+      - "**/LICENSE"
+
+  # Include specific file patterns
+  path_filters:
+    include:
+      - "**/*.ts"
+      - "**/*.tsx"
+      - "**/*.js"
+      - "**/*.jsx"
+
+# Code quality checks
+code_quality:
+  # Check for deprecated dependencies
+  check_deprecated: true
+
+  # Check for security vulnerabilities
+  security_scan: true
+
+  # Check for TypeScript errors
+  typescript:
+    enabled: true
+    strict_mode: true
+
+  # Check for common issues
+  common_issues:
+    - unused_imports
+    - unused_variables
+    - deprecated_apis
+    - console_statements
+    - todo_comments
+
+# PR validation rules
+validation:
+  # Require PR description
+  require_description: true
+  min_description_length: 50
+
+  # PR title format
+  title_pattern: "^(feat|fix|chore|docs|style|refactor|test|perf|build|ci|revert)(\\(.+\\))?: .+"
+
+  # Check for linked issues
+  require_issue_link: false
+
+# Custom rules for React/TypeScript projects
+custom_rules:
+  - name: "Check Lucide React imports"
+    description: "Ensure Lucide React icons are imported correctly"
+    pattern: "import.*from.*lucide-react"
+    message: "Note: Github, Twitter, Linkedin icons may show deprecation warnings but are still functional in v0.555.0"
+    severity: "info"
+
+  - name: "React Hook dependencies"
+    description: "Check useEffect and other hook dependencies"
+    pattern: "useEffect|useMemo|useCallback"
+    message: "Ensure all dependencies are properly specified in hook dependency arrays"
+    severity: "important"
+
+# Performance checks
+performance:
+  # Check for large bundle sizes
+  bundle_analysis: true
+
+  # Check for performance anti-patterns
+  react_performance:
+    - check_memo_usage
+    - check_key_prop
+    - avoid_inline_functions
+
+# Summary settings
+summary:
+  # Include summary in PR comment
+  enabled: true
+
+  # Summary sections
+  sections:
+    - changes_summary
+    - issues_found
+    - suggestions
+    - security_concerns
+
+# Notification settings
+notifications:
+  # Notify on critical issues
+  critical_issues: true
+
+  # Notify on security vulnerabilities
+  security_issues: true

@@ -1,28 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from '../components/FadeIn';
 import { BLOG_POSTS } from '../data';
 
-interface AllBlogsProps {
-  onBack: () => void;
-}
-
-export const AllBlogs = ({ onBack }: AllBlogsProps) => {
-  // Scroll to top when mounting
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+export const AllBlogs = () => {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6 md:px-24 bg-white">
       <FadeIn>
-        <button 
-          onClick={onBack}
+        <Link
+          to="/"
           className="group flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-950 transition-colors mb-12"
         >
           <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-1" />
           Back to Home
-        </button>
+        </Link>
       </FadeIn>
 
       <FadeIn delay={100}>
