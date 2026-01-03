@@ -20,11 +20,11 @@ export const Blog = () => (
                 <span>{post.date}</span>
                 <span>{post.tag}</span>
               </div>
-              
+
               <h3 className="text-2xl font-light leading-snug text-zinc-900 group-hover:underline decoration-1 underline-offset-4">
                 {post.title}
               </h3>
-              
+
               <p className="text-sm text-zinc-600 leading-relaxed line-clamp-3">
                 {post.excerpt}
               </p>

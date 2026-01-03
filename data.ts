@@ -21,7 +21,7 @@ export const PROJECTS: ProjectData[] = [
     category: "Data Visualization", // CRM or Crypto
     description: "Real-time light synthesis control dashboard.",
     year: "2024",
-    link: "#",
+    link: "https://nebulafi.vercel.app/",
     role: "Lead Developer",
     stack: ["Next.js", "Solana", "D3.js", "TypeScript"],
     fullDescription: "Lumina is a bespoke control interface designed for large-scale light installation art. The challenge was to visualize 50,000+ DMX channels in real-time while providing granular control to light technicians. \n\nWe utilized WebGL for the visualization layer to ensure 60fps performance on standard tablets. The UI adheres to a strict high-contrast dark mode to reduce eye strain in unlit control booths. The system allows for generative pattern creation using a node-based editor, which we built from scratch.",
@@ -37,7 +37,7 @@ export const PROJECTS: ProjectData[] = [
     category: "Design System",
     description: "Enterprise scalability framework.",
     year: "2023",
-    link: "#",
+    link: "https://hypechain.vercel.app/",
     role: "Design Systems Architect",
     stack: ["TypeScript", "React", "Storybook", "Figma API"],
     fullDescription: "Vantage is a comprehensive design system built for a fintech conglomerate consolidating 12 distinct sub-brands. The goal was to create a 'themeable' core library that unified UX patterns while allowing distinct visual identities.\n\nThe result was a token-based architecture where semantic values (e.g., 'action-primary') could be mapped to different raw values per brand. This reduced development time for new features by 40% and ensured accessibility compliance across all digital touchpoints.",
@@ -53,7 +53,7 @@ export const PROJECTS: ProjectData[] = [
     category: "Mobile App",
     description: "Audio-first social networking.",
     year: "2023",
-    link: "#",
+    link: "https://lendxrp.vercel.app/",
     role: "Product Designer & Dev",
     stack: ["React Native", "Swift", "Node.js", "PostGIS"],
     fullDescription: "Echo is an experimental social network that relies on geofenced audio 'drops'. Users leave voice messages at specific coordinates that can only be heard when another user physically visits that location.\n\nThe visual interface is radically minimalist, pushing users to focus on the auditory experience. We used map-based interactions as the primary navigation paradigm, requiring significant optimization of map rendering and GPS polling for battery efficiency.",
@@ -69,7 +69,7 @@ export const PROJECTS: ProjectData[] = [
     category: "Fintech",
     description: "Predictive spending algorithms.",
     year: "2022",
-    link: "#",
+    link: "https://github.com/JBurrell999/Model_Madness",
     role: "Senior UI Developer",
     stack: ["Vue.js", "Python", "AWS Lambda"],
     fullDescription: "Mono is a personal finance dashboard that uses predictive algorithms to forecast cash flow. Unlike traditional dashboards that look backward, Mono focuses on the 'future balance'.\n\nThe interface uses a timeline-based view rather than a ledger view. We implemented complex SVG charting that allows users to drag and drop future expenses to see how they impact their runway. The aesthetic is inspired by Swiss brutalism—raw data, no decoration.",
@@ -81,11 +81,11 @@ export const PROJECTS: ProjectData[] = [
   },
   {
     id: 5,
-    title: "Aura Health",
+    title: "FairMaps",
     category: "HealthTech",
     description: "Biometric feedback loops.",
     year: "2022",
-    link: "#",
+    link: "https://github.com/alin9661/fairmaps",
     role: "Frontend Lead",
     stack: ["React", "WebBluetooth", "Three.js"],
     fullDescription: "Aura connects to wearable devices to visualize stress levels in real-time. We created a 'bio-feedback' mode where a generated 3D shape breathes in sync with the user's heart rate variability.\n\nThe challenge was handling the noisy data stream from Bluetooth Low Energy devices and smoothing it into a calming, fluid animation that didn't induce anxiety itself.",
@@ -159,67 +159,67 @@ export const HOBBIES = [
     id: 1,
     title: "Analog Photography",
     description: "Finding silence in the noise of the city. Shot on Leica M6.",
-    image: "https://picsum.photos/seed/leica/800/800?grayscale"
+    image: "/gallery/IMG_0205.jpg"
   },
   {
     id: 2,
-    title: "Alpinism",
+    title: "Big Ben, UK",
     description: "Seeking perspective at 4000m. The thin air clears the mind.",
-    image: "https://picsum.photos/seed/mountains/800/800?grayscale"
+    image: "/gallery/IMG_0241.jpg"
   },
   {
     id: 3,
     title: "Generative Art",
     description: "Exploring the intersection of chaos and code. p5.js experiments.",
-    image: "https://picsum.photos/seed/abstract/800/800?grayscale"
+    image: "/gallery/IMG_0602.jpg"
   },
   {
     id: 4,
     title: "Espresso Brewing",
     description: "The daily pursuit of the perfect extraction. Precision is key.",
-    image: "https://picsum.photos/seed/coffee/800/800?grayscale"
+    image: "/gallery/IMG_0605.jpg"
   },
   {
     id: 5,
-    title: "Brutalist Arch",
+    title: "Rockefeller Center, NY",
     description: "Admiring the raw honesty of concrete structures.",
-    image: "https://picsum.photos/seed/concrete/800/800?grayscale"
+    image: "/gallery/IMG_1035.jpg"
   },
   {
     id: 6,
-    title: "Vinyl Collection",
-    description: "The ritual of dropping the needle. Analog warmth.",
-    image: "https://picsum.photos/seed/vinyl/800/800?grayscale"
+    title: "Yosemite National Park, CA",
+    description: "Picture of Half Dome. Nature's grandeur.",
+    image: "/gallery/IMG_2384.jpg"
   },
   {
     id: 7,
-    title: "Fixed Gear",
+    title: "Gyeongbokgung Palace, KR",
     description: "Urban cycling. Connection between rider and road.",
-    image: "https://picsum.photos/seed/bike/800/800?grayscale"
+    image: "/gallery/IMG_2659.jpg"
   },
   {
     id: 8,
     title: "Modular Synths",
     description: "Sound design with patch cables. Electronic meditation.",
-    image: "https://picsum.photos/seed/synth/800/800?grayscale"
+    image: "/gallery/IMG_3039.jpg"
   },
   {
     id: 9,
     title: "Ceramics",
     description: "Shaping clay on the wheel. Tactile meditation.",
-    image: "https://picsum.photos/seed/ceramics/800/800?grayscale"
+    image: "/gallery/IMG_3747.jpg"
   },
   {
     id: 10,
-    title: "Typography",
+    title: "Nara Park, JP",
     description: "Studying glyphs and kerning. The voice of text.",
-    image: "https://picsum.photos/seed/typography/800/800?grayscale"
+    image: "/gallery/IMG_6763.jpg"
   },
   {
     id: 11,
-    title: "Chess",
+    title: "Osaka, JP",
     description: "Strategy and foresight. The 64 squares.",
-    image: "https://picsum.photos/seed/chess/800/800?grayscale"
+    image: "/gallery/IMG_7201.jpg"
   },
   {
     id: 12,
