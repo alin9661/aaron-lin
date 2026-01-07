@@ -182,7 +182,7 @@ export const HOBBIES = [
   {
     id: 5,
     title: "Rockefeller Center, NY",
-    description: "Admiring the raw honesty of concrete structures.",
+    description: "Taking in the Art Deco lines and energy of Midtown Manhattan.",
     image: "/gallery/IMG_1035.jpg"
   },
   {
