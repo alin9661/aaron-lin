@@ -164,7 +164,7 @@ export const HOBBIES = [
   {
     id: 2,
     title: "Big Ben, UK",
-    description: "Seeking perspective at 4000m. The thin air clears the mind.",
+    description: "Golden hour over the Thames. London’s skyline frozen in time.",
     image: "/gallery/IMG_0241.jpg"
   },
   {
