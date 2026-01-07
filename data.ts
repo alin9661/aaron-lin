@@ -238,33 +238,45 @@ export const HOBBIES = [
   },
   {
     id: 12,
-    title: "Horology",
-    description: "The mechanics of time. Escapements and springs.",
-    image: "https://picsum.photos/seed/watch/800/800?grayscale"
+    title: "Cherry Blossoms, JP",
+    description: "Spring blooms in the land of the rising sun.",
+    image: "/gallery/IMG_0548.jpg"
   },
   {
     id: 13,
-    title: "Botany",
-    description: "Indoor jungle curation. Patience and growth.",
-    image: "https://picsum.photos/seed/plants/800/800?grayscale"
+    title: "Autumn Walk",
+    description: "Golden leaves and crisp air. Seasonal transitions.",
+    image: "/gallery/IMG_1097.jpg"
   },
   {
     id: 14,
-    title: "Woodworking",
-    description: "Joinery and grain. Honors the material.",
-    image: "https://picsum.photos/seed/wood/800/800?grayscale"
+    title: "Mountain Vista",
+    description: "Panoramic views from the summit. Worth the climb.",
+    image: "/gallery/IMG_1164.jpg"
   },
   {
     id: 15,
-    title: "Sci-Fi Lit",
-    description: "Exploring future worlds and alternate realities.",
-    image: "https://picsum.photos/seed/books/800/800?grayscale"
+    title: "Urban Exploration",
+    description: "Finding beauty in city corners and alleyways.",
+    image: "/gallery/IMG_1364.jpg"
   },
   {
     id: 16,
-    title: "Mixology",
-    description: "Balancing flavors. Chemistry in a glass.",
-    image: "https://picsum.photos/seed/cocktail/800/800?grayscale"
+    title: "Sunset Silhouette",
+    description: "Chasing golden hour. Light and shadow play.",
+    image: "/gallery/IMG_1380.jpg"
+  },
+  {
+    id: 17,
+    title: "Street Photography",
+    description: "Capturing candid moments in the everyday.",
+    image: "/gallery/IMG_1748.jpg"
+  },
+  {
+    id: 18,
+    title: "Night Cityscape",
+    description: "City lights after dark. Urban nocturne.",
+    image: "/gallery/IMG_2009.jpg"
   }
 ];
 
