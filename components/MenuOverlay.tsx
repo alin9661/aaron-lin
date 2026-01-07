@@ -39,7 +39,7 @@ export const MenuOverlay = ({ menuOpen, setMenuOpen }: MenuOverlayProps) => {
 
         <div className={`absolute bottom-24 flex gap-8 transition-opacity duration-700 delay-500 ${menuOpen ? 'opacity-100' : 'opacity-0'}`}>
            {SOCIALS.map((s) => (
-             <a key={s.id} href={s.link} aria-label={s.name} className="text-zinc-900 hover:scale-110 transition-transform duration-300 p-2">
+             <a key={s.id} href={s.link} target="_blank" rel="noopener noreferrer" aria-label={s.name} className="text-zinc-900 hover:scale-110 transition-transform duration-300 p-2">
                <s.icon size={32} strokeWidth={1.5} />
              </a>
            ))}

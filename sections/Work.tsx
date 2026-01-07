@@ -12,7 +12,7 @@ export const Work = () => (
     <FadeIn>
       <SectionLabel number="02" text="Selected Works" />
     </FadeIn>
-    
+
     <div className="flex flex-col">
       {PROJECTS.slice(0, 4).map((project, idx) => (
         <FadeIn key={project.id} delay={idx * 100}>
@@ -24,14 +24,14 @@ export const Work = () => (
       ))}
       <div className="border-t border-zinc-200"></div>
     </div>
-    
+
     <div className="mt-16 text-center">
       <FadeIn delay={200}>
         <Link
           to="/work"
-          className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest border-b border-zinc-950 pb-1 hover:text-zinc-700 hover:border-zinc-700 transition-colors"
+          className="inline-block px-8 py-3 border border-zinc-200 text-xs font-bold uppercase tracking-widest hover:bg-zinc-950 hover:text-white transition-all duration-300"
         >
-          View All Projects <MoveRight size={16} />
+          View All Projects
         </Link>
       </FadeIn>
     </div>

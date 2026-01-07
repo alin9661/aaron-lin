@@ -31,7 +31,7 @@ export const Footer = () => (
 
           <div className="flex gap-8">
             {SOCIALS.map((s) => (
-              <a key={s.id} href={s.link} aria-label={s.name} className="text-zinc-500 hover:text-white transition-colors duration-300">
+              <a key={s.id} href={s.link} target="_blank" rel="noopener noreferrer" aria-label={s.name} className="text-zinc-500 hover:text-white transition-colors duration-300">
                 <s.icon size={24} strokeWidth={1.5} />
               </a>
             ))}
