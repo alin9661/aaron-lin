@@ -72,7 +72,7 @@ export const PROJECTS: ProjectData[] = [
     link: "https://github.com/JBurrell999/Model_Madness",
     role: "Senior UI Developer",
     stack: ["Vue.js", "Python", "AWS Lambda"],
-    fullDescription: "Mono is a personal finance dashboard that uses predictive algorithms to forecast cash flow. Unlike traditional dashboards that look backward, Mono focuses on the 'future balance'.\n\nThe interface uses a timeline-based view rather than a ledger view. We implemented complex SVG charting that allows users to drag and drop future expenses to see how they impact their runway. The aesthetic is inspired by Swiss brutalism—raw data, no decoration.",
+    fullDescription: "Model Madness is a personal finance dashboard that uses predictive algorithms to forecast cash flow. Unlike traditional dashboards that look backward, Model Madness focuses on the 'future balance'.\n\nThe interface uses a timeline-based view rather than a ledger view. We implemented complex SVG charting that allows users to drag and drop future expenses to see how they impact their runway. The aesthetic is inspired by Swiss brutalism—raw data, no decoration.",
     images: [
       "https://picsum.photos/seed/mono1/1600/900?grayscale",
       "https://picsum.photos/seed/mono2/800/600?grayscale",
