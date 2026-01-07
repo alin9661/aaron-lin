@@ -72,7 +72,7 @@ export const ProjectDetail = ({ project }: ProjectDetailProps) => {
 
           <FadeIn delay={400}>
             <div className="mt-12">
-              <a href={project.link} target="_blank" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest border-b border-zinc-950 pb-1 hover:text-zinc-700 hover:border-zinc-700 transition-colors">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest border-b border-zinc-950 pb-1 hover:text-zinc-700 hover:border-zinc-700 transition-colors">
                 Visit Live Site <ExternalLink size={16} />
               </a>
             </div>
