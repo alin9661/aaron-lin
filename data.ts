@@ -203,7 +203,7 @@ export const HOBBIES = [
   {
     id: 6,
     title: "Gyeongbokgung Palace, KR",
-    description: "Urban cycling. Connection between rider and road.",
+    description: "Morning light over royal courtyards. Tranquility in the heart of Seoul.",
     image: "/gallery/IMG_2659.jpg"
   },
   {
