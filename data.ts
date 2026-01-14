@@ -78,7 +78,7 @@ export const PROJECTS: ProjectData[] = [
     id: 4,
     title: "Model Madness",
     category: "Deep Learning/Entertainment",
-    description: "Head-to-head AI racing competition",
+    description: "Head-to-head AI racing competition.",
     year: "2025",
     link: "https://github.com/JBurrell999/Model_Madness",
     role: "Senior UI Developer",
