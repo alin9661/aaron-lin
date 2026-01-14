@@ -178,106 +178,94 @@ export const HOBBIES = [
   },
   {
     id: 2,
-    title: "Big Ben, UK",
-    description: "Golden hour over the Thames. London’s skyline frozen in time.",
-    image: "/gallery/IMG_0241.jpg"
-  },
-  {
-    id: 3,
-    title: "Generative Art",
+    title: "Long Island, NYC",
     description: "Exploring the intersection of chaos and code. p5.js experiments.",
     image: "/gallery/IMG_0602.jpg"
   },
   {
-    id: 4,
-    title: "Espresso Brewing",
-    description: "The daily pursuit of the perfect extraction. Precision is key.",
-    image: "/gallery/IMG_0605.jpg"
-  },
-  {
-    id: 5,
+    id: 3,
     title: "Rockefeller Center, NY",
     description: "Taking in the Art Deco lines and energy of Midtown Manhattan.",
     image: "/gallery/IMG_1035.jpg"
   },
   {
-    id: 6,
-    title: "Yosemite National Park, CA",
-    description: "Picture of Half Dome. Nature's grandeur.",
-    image: "/gallery/IMG_2384.jpg"
+    id: 4,
+    title: "Night Cityscape",
+    description: "City lights after dark. Urban nocturne.",
+    image: "/gallery/IMG_2009.jpg"
   },
   {
-    id: 7,
-    title: "Gyeongbokgung Palace, KR",
-    description: "Urban cycling. Connection between rider and road.",
-    image: "/gallery/IMG_2659.jpg"
-  },
-  {
-    id: 8,
-    title: "Modular Synths",
-    description: "Sound design with patch cables. Electronic meditation.",
-    image: "/gallery/IMG_3039.jpg"
-  },
-  {
-    id: 9,
-    title: "Ceramics",
-    description: "Shaping clay on the wheel. Tactile meditation.",
-    image: "/gallery/IMG_3747.jpg"
-  },
-  {
-    id: 10,
-    title: "Nara Park, JP",
-    description: "Studying glyphs and kerning. The voice of text.",
-    image: "/gallery/IMG_6763.jpg"
-  },
-  {
-    id: 11,
-    title: "Osaka, JP",
-    description: "Strategy and foresight. The 64 squares.",
-    image: "/gallery/IMG_7201.jpg"
-  },
-  {
-    id: 12,
-    title: "Cherry Blossoms, JP",
-    description: "Spring blooms in the land of the rising sun.",
-    image: "/gallery/IMG_0548.jpg"
-  },
-  {
-    id: 13,
-    title: "Autumn Walk",
-    description: "Golden leaves and crisp air. Seasonal transitions.",
-    image: "/gallery/IMG_1097.jpg"
-  },
-  {
-    id: 14,
-    title: "Mountain Vista",
-    description: "Panoramic views from the summit. Worth the climb.",
-    image: "/gallery/IMG_1164.jpg"
-  },
-  {
-    id: 15,
-    title: "Urban Exploration",
-    description: "Finding beauty in city corners and alleyways.",
-    image: "/gallery/IMG_1364.jpg"
-  },
-  {
-    id: 16,
-    title: "Sunset Silhouette",
-    description: "Chasing golden hour. Light and shadow play.",
-    image: "/gallery/IMG_1380.jpg"
-  },
-  {
-    id: 17,
+    id: 5,
     title: "Street Photography",
     description: "Capturing candid moments in the everyday.",
     image: "/gallery/IMG_1748.jpg"
   },
   {
-    id: 18,
-    title: "Night Cityscape",
-    description: "City lights after dark. Urban nocturne.",
-    image: "/gallery/IMG_2009.jpg"
-  }
+    id: 6,
+    title: "Gyeongbokgung Palace, KR",
+    description: "Urban cycling. Connection between rider and road.",
+    image: "/gallery/IMG_2659.jpg"
+  },
+  {
+    id: 7,
+    title: "Modular Synths",
+    description: "Sound design with patch cables. Electronic meditation.",
+    image: "/gallery/IMG_3039.jpg"
+  },
+  {
+    id: 8,
+    title: "Ceramics",
+    description: "Shaping clay on the wheel. Tactile meditation.",
+    image: "/gallery/IMG_3747.jpg"
+  },
+  {
+    id: 9,
+    title: "Nara Park, JP",
+    description: "Studying glyphs and kerning. The voice of text.",
+    image: "/gallery/IMG_6763.jpg"
+  },
+  {
+    id: 10,
+    title: "Osaka, JP",
+    description: "Strategy and foresight. The 64 squares.",
+    image: "/gallery/IMG_7201.jpg"
+  },
+  {
+    id: 11,
+    title: "Autumn Walk",
+    description: "Golden leaves and crisp air. Seasonal transitions.",
+    image: "/gallery/IMG_1097.jpg"
+  },
+  {
+    id: 12,
+    title: "Mountain Vista",
+    description: "Panoramic views from the summit. Worth the climb.",
+    image: "/gallery/IMG_1164.jpg"
+  },
+  {
+    id: 13,
+    title: "Cherry Blossoms, JP",
+    description: "Spring blooms in the land of the rising sun.",
+    image: "/gallery/IMG_0548.jpg"
+  },
+  {
+    id: 14,
+    title: "Big Ben, UK",
+    description: "Golden hour over the Thames. London's skyline frozen in time.",
+    image: "/gallery/IMG_0241.jpg"
+  },
+  {
+    id: 15,
+    title: "Yosemite National Park, CA",
+    description: "Picture of Half Dome. Nature's grandeur.",
+    image: "/gallery/IMG_2384.jpg"
+  },
+  {
+    id: 16,
+    title: "Espresso Brewing",
+    description: "The daily pursuit of the perfect extraction. Precision is key.",
+    image: "/gallery/IMG_0605.jpg"
+  },
 ];
 
 export const SOCIALS = [
