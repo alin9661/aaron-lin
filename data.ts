@@ -18,13 +18,23 @@ export const PROJECTS: ProjectData[] = [
   {
     id: 1,
     title: "Nebula",
-    category: "Data Visualization", // CRM or Crypto
-    description: "Real-time light synthesis control dashboard.",
-    year: "2024",
+    category: "Crypto", // CRM or Crypto
+    description: "Multi-sig blockchain treasury management",
+    year: "2025",
     link: "https://nebulafi.vercel.app/",
     role: "Lead Developer",
     stack: ["Next.js", "Solana", "D3.js", "TypeScript"],
-    fullDescription: "Lumina is a bespoke control interface designed for large-scale light installation art. The challenge was to visualize 50,000+ DMX channels in real-time while providing granular control to light technicians. \n\nWe utilized WebGL for the visualization layer to ensure 60fps performance on standard tablets. The UI adheres to a strict high-contrast dark mode to reduce eye strain in unlit control booths. The system allows for generative pattern creation using a node-based editor, which we built from scratch.",
+    fullDescription: `
+      A blockchain treasury management system with multi-signature operations, governance 
+      voting, and comprehensive audit trails for managing crypto-to-crypto sponsorship flows.
+
+      NebuliFi provides secure, transparent treasury management for the NYU Blockchain 
+      Lab. The system enables democratic governance over treasury operations through 
+      eboard voting, while MSafe multi-signature integration ensures that no single party 
+      can unilaterally move funds. Built on Aptos with Move smart contracts, the architecture 
+      follows a minimal on-chain principle—essential logic lives on-chain while 
+      flexibility-requiring features remain off-chain.
+    `,
     images: [
       "https://picsum.photos/seed/lumina1/1600/900?grayscale",
       "https://picsum.photos/seed/lumina2/800/600?grayscale",
@@ -34,13 +44,13 @@ export const PROJECTS: ProjectData[] = [
   {
     id: 2,
     title: "HypeChain",
-    category: "Design System",
-    description: "Enterprise scalability framework.",
-    year: "2023",
+    category: "Crypto",
+    description: "AI-powered NFT authenticity verification",
+    year: "2025",
     link: "https://hypechain.vercel.app/",
-    role: "Design Systems Architect",
-    stack: ["TypeScript", "React", "Storybook", "Figma API"],
-    fullDescription: "Vantage is a comprehensive design system built for a fintech conglomerate consolidating 12 distinct sub-brands. The goal was to create a 'themeable' core library that unified UX patterns while allowing distinct visual identities.\n\nThe result was a token-based architecture where semantic values (e.g., 'action-primary') could be mapped to different raw values per brand. This reduced development time for new features by 40% and ensured accessibility compliance across all digital touchpoints.",
+    role: "Founder",
+    stack: ["Next.js", "Express.js", "Solana", "OpenRouter"],
+    fullDescription: "An AI-powered NFT marketplace that combines computer vision authentication with blockchain technology to combat counterfeit goods in the resale market.\n\nHypeChain addresses a critical problem in the secondary market: counterfeit products. By leveraging AI-driven authenticity verification before minting items as NFTs on Solana, HypeChain creates a trustworthy marketplace where buyers can be confident in their purchases.",
     images: [
       "https://picsum.photos/seed/vantage1/1600/900?grayscale",
       "https://picsum.photos/seed/vantage2/800/600?grayscale",
@@ -50,13 +60,14 @@ export const PROJECTS: ProjectData[] = [
   {
     id: 3,
     title: "LendX",
-    category: "Mobile App",
-    description: "Audio-first social networking.",
-    year: "2023",
+    category: "Crypto",
+    description: "Decentralized peer-to-peer microlending platform",
+    year: "2025",
     link: "https://lendxrp.vercel.app/",
-    role: "Product Designer & Dev",
-    stack: ["React Native", "Swift", "Node.js", "PostGIS"],
-    fullDescription: "Echo is an experimental social network that relies on geofenced audio 'drops'. Users leave voice messages at specific coordinates that can only be heard when another user physically visits that location.\n\nThe visual interface is radically minimalist, pushing users to focus on the auditory experience. We used map-based interactions as the primary navigation paradigm, requiring significant optimization of map rendering and GPS polling for battery efficiency.",
+    role: "Software Developer",
+    stack: ["Ripple", "Next.js", "FastAPI", "XRPL"],
+    fullDescription: "A decentralized peer-to-peer lending marketplace built on XRPL that democratizes access to credit for underserved populations in emerging markets.\n\nLendX addresses a fundamental challenge: 1.7 billion adults globally remain unbanked, locked out of traditional credit systems that require formal financial history. By leveraging XRPL's sub-cent transaction fees and 3-5 second settlement times, LendX makes microlending economically viable at scale—enabling peer-to-peer lending with trustless, blockchain-secured loan agreements.",
+
     images: [
       "https://picsum.photos/seed/echo1/1600/900?grayscale",
       "https://picsum.photos/seed/echo2/800/600?grayscale",
@@ -66,13 +77,17 @@ export const PROJECTS: ProjectData[] = [
   {
     id: 4,
     title: "Model Madness",
-    category: "Fintech",
-    description: "Predictive spending algorithms.",
-    year: "2022",
+    category: "Deep Learning/Entertainment",
+    description: "Head-to-head AI racing competition.",
+    year: "2025",
     link: "https://github.com/JBurrell999/Model_Madness",
     role: "Senior UI Developer",
     stack: ["Vue.js", "Python", "AWS Lambda"],
-    fullDescription: "Model Madness is a personal finance dashboard that uses predictive algorithms to forecast cash flow. Unlike traditional dashboards that look backward, Model Madness focuses on the 'future balance'.\n\nThe interface uses a timeline-based view rather than a ledger view. We implemented complex SVG charting that allows users to drag and drop future expenses to see how they impact their runway. The aesthetic is inspired by Swiss brutalism—raw data, no decoration.",
+    fullDescription: `
+    An interactive RL racing duel where two World Model-based controllers compete head-to-head in real-time, with live parameter tuning to explore how learned policies adapt under competitive pressure.
+
+    Model Madness brings the World Models framework (Ha & Schmidhuber) to life through head-to-head competition. Instead of evaluating AI agents in isolation, this system pits two learned controllers against each other in the CarRacing-v3 environment under identical conditions—providing a direct, interpretable comparison of different strategies and parameter configurations.
+    `,
     images: [
       "https://picsum.photos/seed/mono1/1600/900?grayscale",
       "https://picsum.photos/seed/mono2/800/600?grayscale",
@@ -82,13 +97,13 @@ export const PROJECTS: ProjectData[] = [
   {
     id: 5,
     title: "FairMaps",
-    category: "HealthTech",
-    description: "Biometric feedback loops.",
-    year: "2022",
+    category: "Politics",
+    description: "Statistical gerrymandering detection tool",
+    year: "2024",
     link: "https://github.com/alin9661/fairmaps",
     role: "Frontend Lead",
     stack: ["React", "WebBluetooth", "Three.js"],
-    fullDescription: "Aura connects to wearable devices to visualize stress levels in real-time. We created a 'bio-feedback' mode where a generated 3D shape breathes in sync with the user's heart rate variability.\n\nThe challenge was handling the noisy data stream from Bluetooth Low Energy devices and smoothing it into a calming, fluid animation that didn't induce anxiety itself.",
+    fullDescription: "A full-stack application that uses Monte Carlo Markov Chain simulation to generate thousands of alternative district maps, enabling statistically rigorous detection of gerrymandering patterns across U.S. voting districts.\n\nFairMaps tackles gerrymandering, one of the most significant threats to representative democracy, through computational statistics. Rather than relying on subjective assessments of district shapes, the application generates an ensemble of 10,000+ valid district configurations through MCMC simulation, then compares actual districts against this baseline to identify statistically significant manipulation.",
     images: [
       "https://picsum.photos/seed/aura1/1600/900?grayscale",
       "https://picsum.photos/seed/aura2/800/600?grayscale",
@@ -223,33 +238,45 @@ export const HOBBIES = [
   },
   {
     id: 12,
-    title: "Horology",
-    description: "The mechanics of time. Escapements and springs.",
-    image: "https://picsum.photos/seed/watch/800/800?grayscale"
+    title: "Cherry Blossoms, JP",
+    description: "Spring blooms in the land of the rising sun.",
+    image: "/gallery/IMG_0548.jpg"
   },
   {
     id: 13,
-    title: "Botany",
-    description: "Indoor jungle curation. Patience and growth.",
-    image: "https://picsum.photos/seed/plants/800/800?grayscale"
+    title: "Autumn Walk",
+    description: "Golden leaves and crisp air. Seasonal transitions.",
+    image: "/gallery/IMG_1097.jpg"
   },
   {
     id: 14,
-    title: "Woodworking",
-    description: "Joinery and grain. Honors the material.",
-    image: "https://picsum.photos/seed/wood/800/800?grayscale"
+    title: "Mountain Vista",
+    description: "Panoramic views from the summit. Worth the climb.",
+    image: "/gallery/IMG_1164.jpg"
   },
   {
     id: 15,
-    title: "Sci-Fi Lit",
-    description: "Exploring future worlds and alternate realities.",
-    image: "https://picsum.photos/seed/books/800/800?grayscale"
+    title: "Urban Exploration",
+    description: "Finding beauty in city corners and alleyways.",
+    image: "/gallery/IMG_1364.jpg"
   },
   {
     id: 16,
-    title: "Mixology",
-    description: "Balancing flavors. Chemistry in a glass.",
-    image: "https://picsum.photos/seed/cocktail/800/800?grayscale"
+    title: "Sunset Silhouette",
+    description: "Chasing golden hour. Light and shadow play.",
+    image: "/gallery/IMG_1380.jpg"
+  },
+  {
+    id: 17,
+    title: "Street Photography",
+    description: "Capturing candid moments in the everyday.",
+    image: "/gallery/IMG_1748.jpg"
+  },
+  {
+    id: 18,
+    title: "Night Cityscape",
+    description: "City lights after dark. Urban nocturne.",
+    image: "/gallery/IMG_2009.jpg"
   }
 ];
 
